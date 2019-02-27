@@ -10,10 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        consentsView.onCheckedChangeListener = object: OnConsentsCheckedChangeListener {
-            override fun onCheckedChange(allConsentsChecked: Boolean) {
-                confirmButton.isEnabled = allConsentsChecked
-            }
+        consentsView.onConsentsCheckedChangeListener = { allConsentsChecked ->
+            confirmButton.isEnabled = allConsentsChecked
         }
     }
 }

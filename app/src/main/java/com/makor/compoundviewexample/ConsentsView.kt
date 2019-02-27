@@ -10,7 +10,7 @@ class ConsentsView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
 
-    var onCheckedChangeListener: OnConsentsCheckedChangeListener? = null
+    var onConsentsCheckedChangeListener: (allConsentsChecked: Boolean) -> Unit = {}
 
     init {
         LayoutInflater.from(context).inflate(R.layout.consents_view, this, true)
@@ -20,10 +20,6 @@ class ConsentsView @JvmOverloads constructor(
     }
 
     private fun validateConsents() {
-        onCheckedChangeListener?.onCheckedChange(consent1.isChecked && consent2.isChecked)
+        onConsentsCheckedChangeListener.invoke(consent1.isChecked && consent2.isChecked)
     }
-}
-
-interface OnConsentsCheckedChangeListener {
-    fun onCheckedChange(allConsentsChecked: Boolean)
 }
