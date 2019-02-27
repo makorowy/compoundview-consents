@@ -7,34 +7,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/consentsTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/consents_title"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
-
-    <View
-        android:id="@+id/consentsSeparator"
+    <com.makor.compoundviewexample.ConsentsView
+        android:id="@+id/consentsView"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
-        android:background="@color/colorPrimaryDark" />
-
-    <CheckBox
-        android:id="@+id/consent1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/consent_1" />
-
-    <CheckBox
-        android:id="@+id/consent2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/consent_2" />
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/confirmButton"
