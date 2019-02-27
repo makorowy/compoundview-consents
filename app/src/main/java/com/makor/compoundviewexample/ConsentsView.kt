@@ -2,6 +2,7 @@ package com.makor.compoundviewexample
 
 import android.content.Context
 import android.util.AttributeSet
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.consents_view.view.*
@@ -14,6 +15,9 @@ class ConsentsView @JvmOverloads constructor(
 
     init {
         LayoutInflater.from(context).inflate(R.layout.consents_view, this, true)
+
+        orientation = LinearLayout.VERTICAL
+        gravity = Gravity.CENTER
 
         consent1.setOnCheckedChangeListener { _, _ -> validateConsents() }
         consent2.setOnCheckedChangeListener { _, _ -> validateConsents() }
