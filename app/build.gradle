@@ -26,7 +26,6 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
     implementation "androidx.appcompat:appcompat:$versions.appCompat"
     implementation "androidx.core:core-ktx:$versions.ktx"
-    implementation "androidx.constraintlayout:constraintlayout:$versions.constraint"
 
     testImplementation "junit:junit:$versions.jUnit"
 

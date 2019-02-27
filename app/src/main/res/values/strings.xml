@@ -3,4 +3,5 @@
     <string name="consents_title">Consents</string>
     <string name="consent_1">Consent 1</string>
     <string name="consent_2">Consent 2</string>
+    <string name="confirm">Confirm</string>
 </resources>
