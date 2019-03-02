@@ -1,5 +1,5 @@
 # Compound view example - consents
-This is an example showing how to create a custom compound view by extending one of the ViewGroup class.
+This is an example showing how to create a custom compound view by extending LinearLayout.
 <br/>
 <div align="center"><a href="https://imgflip.com/gif/2v1ahd"><img src="https://i.imgflip.com/2v1ahd.gif" title="made at imgflip.com"/></a></div>
 <br/>
